@@ -52,30 +52,48 @@ Asks the user for an alphabet (letters) input.
 **Returns:**
 - `str`: The alphabet entered by the user.
 
-Example usage:
-# Example 1: is_integer()
+## Example usage:
+### Example 1: is_integer()
+Code:
+```py
 input = "123"
+
 if is_integer(input):
     print("Valid integer")
+
 else:
     print("Invalid integer")
+```
 
-# Example 2: is_valid_input()
-question = "Do you want to proceed? (yes/no)"
-answer = input(question)
-if is_valid_input(question, answer):
-    print("Valid input")
-else:
-    print("Invalid input")
+Output:
+```
+"Valid integer"
+```
 
-# Example 3: ask_for_number()
+### Example 2: is_valid_input()
+code:
+```py
+correct_answer = False
+while not correct_answer:
+    question = "What is your name? "
+    user_input = input(question)
+    valid = is_valid_input(question, user_input)
+
+## Code continues here
+```
+
+Output:
+```
+Asks user if what they entered is correct.
+```
+### Example 3: ask_for_number()
 question = "Enter a number between 1 and 10: "
 min = 1
 max = 10
 number = ask_for_number(question, min, max)
 print("You entered:", number)
 
-# Example 4: ask_for_alphabet()
+### Example 4: ask_for_alphabet()
 question = "Enter a letter: "
 alphabet = ask_for_alphabet(question)
 print("You entered:", alphabet)

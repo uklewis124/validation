@@ -1,4 +1,16 @@
 # File containing functions for validating user input of various types.
+def is_integer(number):
+    """
+    Checks if a number is an integer.
+
+    Args:
+        number (int): The number to check.
+
+    Returns:
+        bool: True if the number is an integer, False otherwise.
+    """
+    return isinstance(number, int)
+
 
 def is_valid_input(question, answer, case_sensitive=False):
     """
